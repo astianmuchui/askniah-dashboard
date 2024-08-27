@@ -17,19 +17,19 @@ const revenueChart = new Chart(ctx, {
         scales: {
             x: {
                 grid: {
-                    display: false // Disables the grid lines on the x-axis
+                    display: false
                 }
             },
             y: {
                 beginAtZero: true,
                 grid: {
-                    display: false // Disables the grid lines on the y-axis
+                    display: false
                 }
             }
         },
         options:{
             responsive: true,
-            maintainAspectRatio: false,  
+            maintainAspectRatio: false,
         },
         plugins: {
             title: {
@@ -102,10 +102,10 @@ const patientSignups_ctx = document.getElementById('patientsChart').getContext('
 const patientSignupsChart = new Chart(patientSignups_ctx, {
     type: 'line',
     data: {
-        labels: ['Mon', 'Tue', 'Wed', 'Thur', 'Fri', 'Sat', 'Sun'], // Updated labels to days of the week
+        labels: ['Mon', 'Tue', 'Wed', 'Thur', 'Fri', 'Sat', 'Sun'],
         datasets: [{
             label: 'Patient Signups',
-            data: [5, 8, 3, 6, 10, 7, 4], // Sample data for each day
+            data: [5, 8, 3, 6, 10, 7, 4],
             backgroundColor: [
                 'rgba(54, 162, 235)',
                 'rgba(255, 99, 132)',
@@ -158,10 +158,10 @@ const tasks_ctx = document.getElementById('tasksChart').getContext('2d');
 const tasksChart = new Chart(tasks_ctx, {
     type: 'bar',
     data: {
-        labels: ['Mon', 'Tue', 'Wed', 'Thur', 'Fri', 'Sat', 'Sun'], // Updated labels to days of the week
+        labels: ['Mon', 'Tue', 'Wed', 'Thur', 'Fri', 'Sat', 'Sun'],
         datasets: [{
             label: 'Tasks',
-            data: [8, 12, 6, 10, 15, 9, 7], // Sample data for each day
+            data: [8, 12, 6, 10, 15, 9, 7],
             backgroundColor: [
                 'rgba(54, 162, 235)',
                 'rgba(255, 99, 132)',
